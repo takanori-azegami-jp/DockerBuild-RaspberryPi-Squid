@@ -17,7 +17,7 @@ $ docker ps
 $ docker images
 
 # Docker コンテナの中に入る
-$ docker exec -it [コンテナID] bash
+$ docker exec -it [コンテナID] /bin/sh
 
 # dokcer-composeのリビルド
 $ docker-compose up -d --build  --force-recreate
