@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  squid:
+    build:
+      context: .
+      dockerfile: dockerfile-squid
+    container_name: squid
+    tty: true
+    restart: always
+    environment:
+      - HTTP_PORT
+      - BASIC_AUTH_COMMENT_OUT
+      - BASIC_AUTH_USERNAME
+      - BASIC_AUTH_PASSWORD
+    ports:
+      - 3128:3128
+    volumes:
+      - /srv/docker/squid/cache:/var/spool/squid
+      - ./squid.conf:/etc/squid/squid.conf
+volumes:
+  squid:
+    driver: local
