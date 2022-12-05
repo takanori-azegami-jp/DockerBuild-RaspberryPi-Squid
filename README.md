@@ -31,6 +31,7 @@ $ docker-compose down --rmi all --volumes --remove-orphans
 http://[ホストPCのipアドレス]:3128
 ※存在しないURLなので「ERROR」が表示されるが動作としては正常
 ```
+![picture 1](images/README/1670203178388.png)  
 
 ## 参考サイト
 - [アプリケーションのHTTPプロキシのテスト環境を作る](https://qiita.com/megmogmog1965/items/9101a6c91bdce6d43aa4)
